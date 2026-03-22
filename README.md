@@ -1,43 +1,55 @@
-# SaaS Churn Prediction
+# SaaS Churn Prediction Pro 🚀
 
-Predicting customer churn for SaaS platforms using Machine Learning.
-
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Project Structure](#project-structure)
-- [How to Run](#how-to-run)
-- [License](#license)
+Machine Learning model to predict customer churn in SaaS platforms.
+Modelo de Machine Learning para prever cancelamento de clientes em plataformas SaaS.
 
 ---
 
-## Project Overview
-This project aims to develop a predictive model to identify customers likely to cancel their SaaS subscriptions (churn). By analyzing historical usage data, payment patterns, and customer interactions, the model provides actionable insights to improve retention.
-
-## Project Structure
-- `data/`: Contains raw and processed data.
-- `src/`: Source code for the churn prediction model.
-- `notebooks/`: Jupyter notebooks for data exploration and prototyping.
-- `tests/`: Unit and integration tests.
+## 🛠️ Stack / Tecnologias
+- **Language**: Python 3.12+
+- **Data Analysis**: Pandas
+- **Machine Learning**: Scikit-Learn (RandomForestClassifier)
+- **Visualization**: Seaborn, Matplotlib
 
 ---
 
-# Previsão de Churn em SaaS
-
-Predição de cancelamento de clientes para plataformas SaaS utilizando Machine Learning.
-
-## Sumário
-- [Visão Geral do Projeto](#visão-geral-do-projeto)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Como Executar](#como-executar)
-- [Licença](#licença)
+## 📈 Results / Resultados
+- **Accuracy / Acurácia**: 72.00%
+- **Visualization / Visualização**:
+![Churn by Support Calls](notebooks/churn_by_support.png)
 
 ---
 
-## Visão Geral do Projeto
-Este projeto visa desenvolver um modelo preditivo para identificar clientes com probabilidade de cancelar suas assinaturas SaaS (churn). Ao analisar dados históricos de uso, padrões de pagamento e interações com o cliente, o modelo fornece insights acionáveis para melhorar a retenção.
+## 🚀 How to Run / Como Rodar
 
-## Estrutura do Projeto
-- `data/`: Contém dados brutos e processados.
-- `src/`: Código-fonte para o modelo de predição de churn.
-- `notebooks/`: Notebooks Jupyter para exploração de dados e prototipagem.
-- `tests/`: Testes unitários e de integração.
+### 1. Install Dependencies / Instalar Dependências
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Predict Churn / Prever Churn
+Run the inference script to test with example cases:
+Execute o script de inferência para testar com casos de exemplo:
+```bash
+python src/predict_churn.py
+```
+
+---
+
+## 📁 Project Structure / Estrutura do Projeto
+- `data/raw/`: Churn dataset (CSV).
+- `models/`: Trained model binaries (`.pkl`).
+- `notebooks/`: Data visualizations and reports.
+- `src/`: 
+  - `initial_analysis.py`: Basic data inspection.
+  - `visualize_data.py`: Chart generation.
+  - `train_model.py`: Model training and evaluation.
+  - `predict_churn.py`: Individual prediction script.
+
+---
+
+## English Description
+This project aims to develop a predictive model to identify customers likely to cancel their SaaS subscriptions (churn). By analyzing historical usage data, it provides actionable insights to improve retention.
+
+## Descrição em Português
+Este projeto visa desenvolver um modelo preditivo para identificar clientes com probabilidade de cancelar suas assinaturas SaaS (churn). Ao analisar dados históricos de uso, o modelo fornece insights acionáveis para melhorar a retenção.
